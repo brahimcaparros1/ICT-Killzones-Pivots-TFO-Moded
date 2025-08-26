@@ -91,11 +91,11 @@ label_right         = input.bool(true, "Right Side", inline = "LB", group = g_LA
 ext_pivots          = input.string("Until Mitigated", "Extend Pivots...", options = ['Until Mitigated', 'Past Mitigation'], group = g_LABELS)
 ext_which           = input.string("Most Recent", "...From Which Sessions", options = ['Most Recent', 'All'], group = g_LABELS)
 
-ash_str             = input.string("AS.H", "Killzone 1 Labels", inline = "L_AS", group = g_LABELS)
-asl_str             = input.string("AS.L", "", inline = "L_AS", group = g_LABELS)
+ash_str             = input.string("AH", "Killzone 1 Labels", inline = "L_AS", group = g_LABELS)
+asl_str             = input.string("AL", "", inline = "L_AS", group = g_LABELS)
 
-loh_str             = input.string("LO.H", "Killzone 2 Labels", inline = "L_LO", group = g_LABELS)
-lol_str             = input.string("LO.L", "", inline = "L_LO", group = g_LABELS)
+loh_str             = input.string("LH", "Killzone 2 Labels", inline = "L_LO", group = g_LABELS)
+lol_str             = input.string("LL", "", inline = "L_LO", group = g_LABELS)
 
 nah_str             = input.string("NYAM.H", "Killzone 3 Labels", inline = "L_NA", group = g_LABELS)
 nal_str             = input.string("NYAM.L", "", inline = "L_NA", group = g_LABELS)
@@ -142,10 +142,10 @@ m_color             = input.color(color.red, "", inline = "MO", group = g_DWM)
 htf_style           = get_line_type(input.string(defval = 'Solid', title = "Style", options = ['Solid', 'Dotted', 'Dashed'], inline = "D0", group = g_DWM))
 htf_width           = input.int(1, "", inline = "D0", group = g_DWM)
 
-dow_labels          = input.bool(true, "Day of Week Labels", inline = "DOW", group = g_DWM)
+dow_labels          = input.bool(false, "Day of Week Labels", inline = "DOW", group = g_DWM)
 dow_yloc            = input.string('Bottom', "", options = ['Top', 'Bottom'], inline = "DOW", group = g_DWM)
 dow_xloc            = input.string('Midnight', "", options = ['Midnight', 'Midday'], inline = "DOW", group = g_DWM)
-dow_hide_wknd       = input.bool(true, "Hide Weekend Labels", group = g_DWM)
+dow_hide_wknd       = input.bool(false, "Hide Weekend Labels", group = g_DWM)
 
 
 var g_OPEN          = "Opening Prices"
